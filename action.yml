@@ -5,5 +5,5 @@ runs:
   using: composite
   steps:
     - name: run script
-      run: git update-index --chmod=+x ${GITHUB_ACTION_PATH}/script.sh
+      run: sh ${GITHUB_ACTION_PATH}/script.sh
       shell: bash
