@@ -1,0 +1,13 @@
+name: 'version_change'
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    name: run commands
+    steps:
+      - name: echo a string
+        run: echo "Write Something"
