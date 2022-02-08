@@ -12,4 +12,4 @@ jobs:
       - name: echo a string
         run: echo "Write Something"
       - name: echo a string
-        run: echo "Write Something Again"
+        run: echo "Write Something New"
