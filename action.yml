@@ -1,0 +1,9 @@
+name: bash actions
+description: A sample github action written in bash
+
+runs:
+  using: composite
+  steps:
+    - name: run script
+      run: bash ${GITHUB_ACTION_PATH}/script.sh
+      shell: bash

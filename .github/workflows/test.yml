@@ -2,14 +2,16 @@ name: 'version_change'
 on:
   push:
     branches:
-      - main
+      - develop
 
 jobs:
   release:
     runs-on: ubuntu-latest
     name: run commands
     steps:
-      - name: echo a string
-        run: echo "Write Something"
-      - name: echo a string
-        run: echo "Write Something Again"
+      - name: checkout
+        uses: actions/checkout@v2
+      
+      - uses: ./
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
