@@ -12,17 +12,17 @@
 # case "bug" in $z:
 #     echo "there is a bug"
 
-latest=${gh pr list --limit 1}
-echo $latest
+latest=($(gh pr list --limit 1))
+echo 'latest:' $latest
 
 b=($(gh pr list --label bug --limit 1))
-echo $b
+echo 'b:' $b
 
 e=($(gh pr list --label enhancement --limit 1))
-echo $e
+echo 'e:' $e
 
 m=($(gh pr list --label major --limit 1))
-echo $m
+echo 'm:' $m
 
 case $latest in 
     $b )
