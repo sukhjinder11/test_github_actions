@@ -5,5 +5,5 @@ runs:
   using: composite
   steps:
     - name: run script
-      run: sh ${GITHUB_ACTION_PATH}/script.sh
+      run: bash ${GITHUB_ACTION_PATH}/script.sh
       shell: bash

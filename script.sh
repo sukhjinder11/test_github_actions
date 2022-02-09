@@ -12,7 +12,7 @@
 # case "bug" in $z:
 #     echo "there is a bug"
 
-latest=($(gh pr list --limit 1))
+latest=${gh pr list --limit 1}
 echo $latest
 
 b=($(gh pr list --label bug --limit 1))
