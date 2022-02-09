@@ -1,5 +1,5 @@
 #!/bin/bash
-# echo "Hello World"
+echo "Hello World"
 
 # y=($(gh release list --limit 1))
 # z=(($y)[1:3])
