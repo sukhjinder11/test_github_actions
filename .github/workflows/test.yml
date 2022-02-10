@@ -1,6 +1,6 @@
 name: 'version_change'
 on:
-  push:
+  pull_request:
     branches:
       - develop
       - test
