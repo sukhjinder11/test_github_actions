@@ -26,9 +26,13 @@ echo 'm:' $m
 
 case $latest in 
     $b )
-        echo "Its a bug" ;;
+        update="bug" ;;
     $m )
-        echo "Its a major" ;;
+        update="major" ;;
     $e )
-        echo "Its an enhancement" ;;
+        update="enhancement" ;;
 esac
+
+rel=($(gh release list --limit 1))
+
+python3 pyscript.py $update $rel
