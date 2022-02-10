@@ -12,7 +12,7 @@ if pr_type == 'bug':
 
 
 next_release = 'v' + cur_rel[0] + '.' + cur_rel[1] + '.' + cur_rel[2]
-
+print('next_release: ' + next_release)
 
 
 
