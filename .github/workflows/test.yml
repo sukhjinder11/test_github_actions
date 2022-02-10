@@ -16,9 +16,3 @@ jobs:
       - uses: ./
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  newjob:
-    runs-on: ubuntu-latest
-    name: new commands
-    steps:
-      - run: echo "new commands:"
-      - run: echo $GitVersion.SemVer

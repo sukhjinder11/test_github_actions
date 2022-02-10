@@ -32,3 +32,5 @@ case $latest in
     $e )
         echo "Its an enhancement" ;;
 esac
+
+python3 pyscript.py
