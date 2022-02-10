@@ -2,9 +2,8 @@ name: 'version_change'
 on:
   pull_request:
     branches:
-      - develop
-      - test
-
+      - main
+      
 jobs:
   release:
     runs-on: ubuntu-latest
