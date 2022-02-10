@@ -33,4 +33,6 @@ case $latest in
         update="enhancement" ;;
 esac
 
-python3 pyscript.py $update
+rel=($(gh release list --limit 1))
+
+python3 pyscript.py $update $rel
