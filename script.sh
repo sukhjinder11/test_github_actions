@@ -26,11 +26,11 @@ echo 'm:' $m
 
 case $latest in 
     $b )
-        echo "Its a bug" ;;
+        update="bug" ;;
     $m )
-        echo "Its a major" ;;
+        update="major" ;;
     $e )
-        echo "Its an enhancement" ;;
+        update="enhancement" ;;
 esac
 
-python3 pyscript.py
+python3 pyscript.py update
