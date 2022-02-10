@@ -33,4 +33,4 @@ case $latest in
         update="enhancement" ;;
 esac
 
-python3 pyscript.py update
+python3 pyscript.py $update
